@@ -79,7 +79,7 @@ class ContactForm extends Form {
 
             {newLead && (
               <div className="text-center">
-                <h5 className="font text-center ml-3">נדבר בקרוב! 🤖</h5>
+                <h5 className="font text-center ml-3">נדבר בקרוב! </h5>
               </div>
             )}
           </div>
