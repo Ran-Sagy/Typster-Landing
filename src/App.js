@@ -144,7 +144,7 @@ export default function App() {
             modelPath="/app.gltf"
             position={280}
           >
-            <div dir="rtl" className="row text-right">
+            <div dir="rtl" className="container row text-right">
               <div
                 dir="rtl"
                 className="head-line3 col-lg-6 col-md-8 col-sm-12 text-right mt-5 pushdown"
@@ -161,7 +161,7 @@ export default function App() {
             modelPath="/armchairGreen.gltf"
             position={0}
           >
-            <div dir="rtl" className="row text-right">
+            <div dir="rtl" className="container row text-right">
               <div dir="rtl" className="head-line3 col-6 text-right mt-5">
                 <span className="yellow">תבלטו</span>
                 <span>מול המתחרים.</span>
@@ -175,7 +175,7 @@ export default function App() {
             position={-250}
           >
             <div id="contact">
-              <div dir="rtl" className="row text-right">
+              <div dir="rtl" className="container row text-right">
                 <div dir="rtl" className="head-line3 col-6 text-right mt-5">
                   <span></span>
                   <span>בואו נדבר...</span>
