@@ -58,7 +58,7 @@ class ContactForm extends Form {
       <div className="col-8">
         <div
           id="contactUs"
-          className="col-lg-12 col-md-8 col-sm-12 ml-auto font3"
+          className="col-lg-12 col-md-8 col-sm-12 ml-auto font3 "
         >
           <div className="">
             <div className="text-center mt-5">
@@ -68,10 +68,16 @@ class ContactForm extends Form {
                 method="POST"
                 className="input-group mb-3"
               >
-                <div className="row">
+                <span className="row">
                   {this.renderInput("phone", "טלפון", "tel")}
+                </span>
+                <span className="row">
                   {this.renderInput("email", "מייל", "email")}
+                </span>
+                <span className="row">
                   {this.renderInput("name", "שם", "text")}
+                </span>
+                <div className="row col-12">
                   <div className="col-12">{this.renderButton("תחזרו אלי")}</div>
                 </div>
               </form>
