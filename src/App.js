@@ -87,7 +87,11 @@ const HTMLContent1 = ({
   return (
     <Section factor={1.5} offset={1}>
       <group position={[0, position, 0]}>
-        <mesh scale={[1, 1, 1]} ref={ref} position={[-40, -100, 0]}>
+        <mesh
+          scale={window.innerWidth > 1000 ? [0.9, 0.9, 0.9] : [0.5, 0.5, 0.5]}
+          ref={ref}
+          position={window.innerWidth > 1000 ? [-65, -100, 0] : [-10, -75, 20]}
+        >
           <Model url={modelPath} />
         </mesh>
         <Html fullscreen portal={domContent}>
@@ -144,11 +148,8 @@ export default function App() {
             modelPath="/app.gltf"
             position={280}
           >
-            <div dir="rtl" className="container row text-right">
-              <div
-                dir="rtl"
-                className="head-line3 col-lg-6 col-md-8 col-sm-12 text-right mt-5 pushdown"
-              >
+            <div dir="rtl" className="container text-right firstSection">
+              <div dir="rtl" className="  ">
                 <span>תנו לנו להציג </span>
                 <span>את המוצר שלכם</span>
                 <span className="blue">כמו שמגיע לו</span>
